@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/json_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/json_password"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/password"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/json_contact"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/contact"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/json_country"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/country"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</LinearLayout>
