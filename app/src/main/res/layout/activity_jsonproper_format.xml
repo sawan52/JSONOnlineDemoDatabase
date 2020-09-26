@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,41 +15,41 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
             android:text="Name"
-            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#000000"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
             android:text="Password"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#000000"
-            android:gravity="center"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
             android:text="Contact"
-            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#000000"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:text="Country"
             android:gravity="center"
+            android:text="Country"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#000000"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -58,6 +57,6 @@
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>

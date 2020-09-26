@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="15dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/get_json_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="@string/get_json"/>
-
+        android:text="@string/get_json"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/parse_json_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="@string/parse_json"/>
+        android:text="@string/parse_json"
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/display_json"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>

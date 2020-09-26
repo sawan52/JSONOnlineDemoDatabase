@@ -1,7 +1,7 @@
 package com.example.jsononlinedemodatabase;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -35,7 +35,7 @@ public class JSONProperFormatActivity extends AppCompatActivity {
             int count = 0;
             jsonArray = jsonObject.getJSONArray("server_response");
 
-            while (count < jsonArray.length()){
+            while (count < jsonArray.length()) {
 
                 JSONObject JO = jsonArray.getJSONObject(count);
                 name = JO.getString("name");

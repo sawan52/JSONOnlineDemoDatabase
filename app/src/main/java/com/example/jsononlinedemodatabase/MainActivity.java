@@ -3,11 +3,13 @@ package com.example.jsononlinedemodatabase;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -52,16 +54,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, JSONProperFormatActivity.class);
-                intent.putExtra("json_data", JSON_STRING);
-                startActivity(intent);
-
+                if (TextUtils.isEmpty(display_text_view.getText().toString())) {
+                    Toast.makeText(MainActivity.this, "First Get the JSON and then parse it.", Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(MainActivity.this, JSONProperFormatActivity.class);
+                    intent.putExtra("json_data", JSON_STRING);
+                    startActivity(intent);
+                }
             }
         });
 
     }
 
-    class BackgroundTask extends AsyncTask<Void, Void, String>{
+    class BackgroundTask extends AsyncTask<Void, Void, String> {
 
         String json_url = "http://myfirstsite.eu3.biz/retrieve.php";
 
@@ -76,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // collect all the data and store it in String Builder
                 StringBuilder stringBuilder = new StringBuilder();
-                while ((json_string = bufferedReader.readLine()) != null){
+                while ((json_string = bufferedReader.readLine()) != null) {
 
                     stringBuilder.append(json_string + "\n");
 

@@ -8,11 +8,11 @@
         android:id="@+id/json_name"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:textColor="@color/colorAccent"
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/name"
-        android:textAppearance="?android:textAppearanceMedium" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/json_password"
@@ -20,19 +20,19 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:textColor="@color/colorAccent"
         android:text="@string/password"
-        android:textAppearance="?android:textAppearanceMedium" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/json_contact"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:textColor="@color/colorAccent"
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/contact"
-        android:textAppearance="?android:textAppearanceMedium" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/json_country"
@@ -41,7 +41,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/country"
-        android:textColor="@color/colorAccent"
-        android:textAppearance="?android:textAppearanceMedium" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorAccent" />
 
 </LinearLayout>

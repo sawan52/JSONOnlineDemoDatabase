@@ -42,7 +42,7 @@ public class CustomAdapter extends ArrayAdapter {
         View row;
         row = convertView;
 
-        if (row == null){
+        if (row == null) {
 
             LayoutInflater layoutInflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = layoutInflater.inflate(R.layout.display_in_list_layout, parent, false);
@@ -54,8 +54,7 @@ public class CustomAdapter extends ArrayAdapter {
             extractJSONDataHolder.tx_country = row.findViewById(R.id.json_country);
             row.setTag(extractJSONDataHolder);
 
-        }
-        else {
+        } else {
             extractJSONDataHolder = (ExtractJSONDataHolder) row.getTag();
         }
 

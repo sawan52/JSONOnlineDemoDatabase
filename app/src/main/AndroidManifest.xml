@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".JSONProperFormatActivity"
+        <activity
+            android:name=".JSONProperFormatActivity"
             android:label="Retrieved Data"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
